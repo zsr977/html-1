@@ -1,0 +1,86 @@
+body,header,ul,li {
+	margin: 0;
+	padding: 0;
+	color: #ccc;
+}
+ul,ol {
+	list-style: none;
+}
+body {
+	overflow-y:scroll;
+}
+header>nav {
+	background: rgba(200,200,200,0.3);
+	height: 120px;
+	width: 100%;
+	position: relative;
+	top: 0px;
+	animation: header 0.5s;
+	-moz-animation: header 0.5s;	/* Firefox */
+	-webkit-animation: header 0.5s;	/* Safari 和 Chrome */
+	-o-animation: header 0.5s;	/* Opera */
+}
+header>section {
+	margin: 0 auto;
+	width: 70%;
+}
+header>section>p {
+	width: 40%;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+}
+@keyframes header
+{
+	from {
+		background: rgba(200,200,200,0);
+		position: relative;
+		top: -120px;
+	}
+	to {
+		background: rgba(200,200,200,0.3);
+		position: relative;
+		top: 30px;
+	}
+}
+
+@-moz-keyframes header /* Firefox */
+{
+	from {
+		background: rgba(200,200,200,0);
+		position: relative;
+		top: -120px;
+	}
+	to {
+		background: rgba(200,200,200,0.3);
+		position: relative;
+		top: 30px;
+	}
+}
+
+@-webkit-keyframes header /* Safari 和 Chrome */
+{
+	from {
+		background: rgba(200,200,200,0);
+		position: relative;
+		top: -120px;
+	}
+	to {
+		background: rgba(200,200,200,0.3);
+		position: relative;
+		top: 30px;
+	}
+}
+
+@-o-keyframes header /* Opera */
+{
+	from {
+		background: rgba(200,200,200,0);
+		position: relative;
+		top: -120px;
+	}
+	to {
+		background: rgba(200,200,200,0.3);
+		position: relative;
+		top: 30px;
+	}
+}
