@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="jquerymobile/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="yibanmobile_css/account.css" />
+	<script type="text/javascript" src="jquerymobile/jquery.min.js"></script>
+	<script type="text/javascript" src="jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body  data-role="page">
+	<header  data-role="header">
+		<h3>账号绑定</h3>
+	</header>
+	<section data-role="main" class="ui-content">
+		<div id="logo">
+		    <img src="yibanmobile_img/search.png">
+		</div>
+		<p>该应用由广东石油化工学院校易班技术部开发，未经授权禁止调用<br/><br/>请绑定个人信息</p>
+		<form action="https://hlrpz.cn/public/yibanmobile/search/save" method = 'post' data-ajax="false">
+		    <div>
+		        <input data-ajax="false" type="text" name="school_id" placeholder="学号">
+		    </div>
+		    <div>
+		    	<input data-ajax="false" type="password" name="school_password" placeholder="教务系统密码，如未更改，则和学号一致">
+		    </div>
+			<div>
+				<button data-ajax="false" class="ui-btn ui-corner-all">绑定</button>
+			</div>
+		</form>
+	</section>
+</body>
+</html>
