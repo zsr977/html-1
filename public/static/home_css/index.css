@@ -1,4 +1,4 @@
-body,header,ul,li,nav {
+body,header,ul,li,nav,h4 {
 	margin: 0;
 	padding: 0;
 }
@@ -105,4 +105,49 @@ header>section>p {
 }
 #content {
 	background: rgba(50,50,50,0.7);
+	height: 2000px;
+}
+#west {
+	width: 70%;
+	float: left;
+}
+#east {
+	width: 30%;
+	float: right;
+}
+#info {
+	width: 80%;
+	background: #fff;
+	height: 220px;
+	float: left;
+	margin-top: 20px;
+	box-shadow: 2px 1px 2px #fff;
+	border-radius: 2px;
+}
+#info img {
+	padding: 10px;
+	border-right: 1px dashed #666;
+	display: block;
+	float: left;
+}
+#info p {
+	font-size: 0.8em;
+	color: #555;
+	text-indent: 2em;
+}
+footer {
+	clear: both;
+	text-align: center;
+	height: 55px;
+	font-size: 0.8em;
+	color: #ccc;
+	background: #333;
+	padding-top: 10px;
+	line-height: 20px;
+}
+#beian{
+	width: 16px;
+	position: relative;
+	top: 3px;
+	padding-right: 3px;
 }
