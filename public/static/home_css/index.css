@@ -1,12 +1,15 @@
-body,header,ul,li,nav,h4 {
+body,header,ul,li,nav,h3,h4,h5,h6 {
 	margin: 0;
 	padding: 0;
+}
+body {
+	overflow-y:scroll;
 }
 ul,ol {
 	list-style: none;
 }
-body {
-	overflow-y:scroll;
+a {
+	text-decoration: none;
 }
 header>nav {
 	background: rgba(200,200,200,0.3);
@@ -103,20 +106,39 @@ header>section>p {
 		top: 30px;
 	}
 }
-#content {
-	background: rgba(50,50,50,0.7);
-	height: 2000px;
-}
 #west {
 	width: 70%;
 	float: left;
+	background: rgba(50,50,50,0.7);
+}
+#content {
+	width: 80%;
+	background: #fff;
+	float: right;
+	margin: 20px 5% 20px 0;
+	box-shadow: 2px 1px 2px #fff;
+	border-radius: 2px;
+	padding-top: 10px;
+}
+#content .history dt a {
+	margin-top: 20px;
+	font-size: 0.6em;
+	background: #c60;
+	color: #fff;
+	padding: 3px 10px;
+	border-radius: 3px;
+}
+#content .history dt a:hover {
+	background: #666;
+	color: #fff;
 }
 #east {
 	width: 30%;
 	float: right;
+	background: rgba(50,50,50,0.7);
 }
 #info {
-	width: 80%;
+	width: 90%;
 	background: #fff;
 	height: 220px;
 	float: left;
@@ -134,6 +156,89 @@ header>section>p {
 	font-size: 0.8em;
 	color: #555;
 	text-indent: 2em;
+}
+#thank {
+	width: 90%;
+	background: #fff;
+	float: left;
+	margin-top: 40px;
+}
+#thank p {
+	margin: 0;
+	border-bottom: 1px solid #999;
+	text-align: center;
+	line-height: 2em;
+	color: #444;
+	font-weight: 800;
+	background: #ccc;
+}
+#thank ul {
+	background: #eee;
+}
+#thank ul li {
+	display: block;
+	width: 25%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+#thank ul li:nth-child(1) {
+	color: #eee;
+	background: #666;
+}
+#thank ul li:nth-child(2) {
+	color: #ddd;
+	background: #555;
+}
+#thank ul li:nth-child(3) {
+	color: #ccc;
+	background: #444;
+}
+#thank ul li:nth-child(4) {
+	color: #aaa;
+	background: #333;
+}
+#thank img {
+	width: 100%;
+	margin: 0 0 -10px 0;
+}
+#hot {
+	width: 90%;
+	background: #fff;
+	float: left;
+	margin: 40px 0;
+}
+#hot h5 {
+	text-align: center;
+	padding: 5px;
+	background: #c60;
+	color: #eee;
+	letter-spacing: 2px;
+}
+#hot .demo {
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px dashed #ccc;
+	cursor: pointer;
+}
+#hot .demo:hover {
+	background: #eee;
+}
+#hot .demo h3 {
+	line-height: 30px;
+	color: #444;
+	padding: 0 0.5em;
+	font-weight: 100;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#hot .demo p{
+	margin: 0;
+	padding: 0 1em;
+	line-height: 30px;
+	font-size: 0.7em;
+	color: #666;
 }
 footer {
 	clear: both;
