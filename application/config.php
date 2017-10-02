@@ -143,6 +143,7 @@ return [
         'yibanmobile_img' => '/public/static/yibanmobile_img',
         'yibanmobile_css' => '/public/static/yibanmobile_css',
         'yibanmobile_js' => '/public/static/yibanmobile_js',
+        'jquery_plug' => '/public/static/jquery_plug',
         'jqueryui' => '/public/static/jqueryui',
         'jquerymobile' => '/public/static/jquerymobile'
     ],
