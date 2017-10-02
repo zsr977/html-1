@@ -16,17 +16,11 @@ $(function(){
 		if (h > 20 && h<200 ) {
 			$(document).scrollTop(380)
 			$('#info').css("margin-top","100px");
-//			$('#header-top').hide('blind','swing',1000,function(){
-//				$('header').height(s);
-//				$('footer').css('position','relative');
-//			});
+			$('#content').css("margin-top","100px");
 		} else if(h >=200 && h<380 ) {
 			$(document).scrollTop(0);
 			$('#info').css("margin-top","20px");
-//			$('#header-top').show('blind','swing',1000,function(){
-//				$('header').height(h);
-//				$('footer').css('position','fixed');
-//			});
+			$('#content').css("margin-top","20px");
 		}
 	});
 	
@@ -87,4 +81,18 @@ $(function(){
 		    }
 		});
 	}, 1000);
+	
+	//微信打赏
+	$("#thank ul").children("li").eq(0).click(function(){
+		$("#thank img").attr("src",ThinkPHP['IMG']+"/1.jpg");
+	});
+	$("#thank ul").children("li").eq(1).click(function(){
+		$("#thank img").attr("src",ThinkPHP['IMG']+"/2.jpg");
+	});
+	$("#thank ul").children("li").eq(2).click(function(){
+		$("#thank img").attr("src",ThinkPHP['IMG']+"/5.jpg");
+	});
+	$("#thank ul").children("li").eq(3).click(function(){
+		$("#thank img").attr("src",ThinkPHP['IMG']+"/10.jpg");
+	});
 });
