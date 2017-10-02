@@ -10,6 +10,26 @@ $(function(){
 	// 雪花效果
 	$(document).snow();
 	
+	//自动隐藏/展开顶部
+	$(window).scroll(function(){
+		var h=$(document).scrollTop();
+		if (h > 20 && h<200 ) {
+			$(document).scrollTop(380)
+			$('#info').css("margin-top","100px");
+//			$('#header-top').hide('blind','swing',1000,function(){
+//				$('header').height(s);
+//				$('footer').css('position','relative');
+//			});
+		} else if(h >=200 && h<380 ) {
+			$(document).scrollTop(0);
+			$('#info').css("margin-top","20px");
+//			$('#header-top').show('blind','swing',1000,function(){
+//				$('header').height(h);
+//				$('footer').css('position','fixed');
+//			});
+		}
+	});
+	
 	// 文字效果
 	setTimeout(function() {
 		$( "header section").children("p").eq(0).css("display","block").lbyl({
